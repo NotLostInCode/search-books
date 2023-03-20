@@ -5,7 +5,7 @@ import axios from 'axios';
 const baseURL = 'https://www.googleapis.com/books/v1/volumes?q=search-terms&key=AIzaSyARS8Z1E8kNPmwKvk_0CtnLECcf0ueDPlU'
 
 
-function Books () {
+function BookCard () {
   
 
    axios.get(baseURL).then((res) => {
@@ -21,4 +21,4 @@ function Books () {
        </div>
     )
 }
-export default Books;
+export default BookCard;
